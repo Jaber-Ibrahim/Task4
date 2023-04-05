@@ -1,0 +1,48 @@
+.company .container {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+}
+.container .slide-show h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.container .cont {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.container .cont i {
+  font-size: 30px;
+  position: absolute;
+  font-weight: bold;
+  color: var(--main-font-color);
+  cursor: pointer;
+}
+.container .cont .fa-angle-right {
+  animation: move-right 0.2s infinite alternate;
+}
+.container .cont .fa-angle-left {
+  animation: move-left 0.2s infinite alternate;
+}
+@keyframes move-left {
+  from {
+    left: 5%;
+  }
+  to {
+    left: 4%;
+  }
+}
+@keyframes move-right {
+  from {
+    right: 5%;
+  }
+  to {
+    right: 4%;
+  }
+}
+
+.container .cont .info {
+  text-align: center;
+}
